@@ -5,7 +5,7 @@ import pytesseract
 
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
-app_ocr = Flask(__name__)
+app = Flask(__name__)
 
 @app_ocr.route('/api/perform_ocr/<language>', methods=['PUT'])
 def perform_ocr(language):
